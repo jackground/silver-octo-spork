@@ -47,7 +47,10 @@ hr {
     margin: 0 auto 40px auto;
 }
 
-#logo {transition: all 300ms; -webkit-transition: all 300ms -moz-transition: all 300ms -o-transition: all 300ms}
+#logo, li, img {
+    transition: all 300ms;
+    -webkit-transition: all 300ms -moz-transition: all 300ms -o-transition: all 300ms
+}
 
 /* HEADER *************************/
 
@@ -63,9 +66,9 @@ header {
 }
 
 #logo {
-    width: 140px;
+    width: 100px;
     float: left;
-    margin: 10px 0 0 50px;
+    margin: 10px 0 0 40px;
 }
 
 #logo:hover {
@@ -74,7 +77,6 @@ header {
 
 #logo img {
     width: 100%;
-
 }
 
 header nav {
@@ -84,13 +86,139 @@ header nav {
 
 header nav ul li {
     float: left;
-    margin-right: 10px
+    margin-right: 25px
 }
 
 header nav ul li a {
-    font-size
+    font-size: 16px;
 }
 
+header nav ul li:hover {
+    padding-top: 5px;
+}
+
+/* HOME *************************/
+
+#home {
+    background: url(img/landing.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#home h1 {
+    margin: 240px auto 0 auto;
+    font-size: 80px;
+}
+
+#home h2 {
+    margin: 0 auto 0 auto;
+    font-size: 25px;
+}
+
+#home img {
+    width: 32px;
+    margin-top: 150px;
+    opacity: 0.7;
+}
+
+#home img:hover {
+    opacity: 1;
+}
+
+/* ABOUT *************************/
+
+#about img {
+    width: 240px;
+}
+#about img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1)
+    -moz-transform: scale(1.1)
+    -o-transform: scale(1.1)
+}
+
+#about h4 {
+    font-size: 25px;
+}
+
+#about p {
+    width: 700px;
+    margin: 0 auto 0 auto;
+}
+
+/* SERVICES *************************/
+
+#services {
+    background-color: #f0f0f0;
+
+}
+
+#specs {
+    width: 900px;
+    margin: 0 auto 0 auto;
+}
+
+#specs ul {
+    padding: 0;
+}
+
+#specs ul li {
+    width: 33.3%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+#specs img {
+    width: 280px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+#specs img:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05)
+    -moz-transform: scale(1.05)
+    -o-transform: scale(1.05)
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* CONTACT *************************/
+
+form input, textarea {
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: 2px solid;
+    border-color: #494949;
+}
+
+form input:first-child {
+    margin-top: 10px;
+}
+
+form input {
+    width: 552px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+form textarea {
+    width: 550px;
+    height: 220px;
+    resize: none;
+}
+
+.input_text {
+    color: #494949;
+    padding-left: 10px;
+}
+
+::-webkit-input-placeholder {color: #999999;}
+::moz-placeholder {}
+:-ms-input-placeholder
 
 
 /* body {
